@@ -1,0 +1,30 @@
+<div class="teamDiv">
+  <md-toolbar color="primary">
+    <span class="noselect">Team {{myID}}</span>
+    <div class="r-icon noselect" (click)="removeThisTeam()"><md-icon>delete_forever</md-icon></div>
+  </md-toolbar>
+  <div class="bodyDIV">
+    <div class="addPlayerDIV">
+      <div class="addPlayerDIVLimit">
+        <md-input-container class="example-full-width">
+          <input mdInput [(ngModel)]="nplayer" #nplayerinput maxlength="10" placeholder="New Player" [ngClass]="'focusOnMe' + myID">
+          <md-hint align="end">{{nplayerinput.value.length}} / 10</md-hint>
+        </md-input-container>
+      </div>
+      <div (click)="createPlayer()" class="r-iconAdd noselect"><md-icon>note_add</md-icon></div>
+    </div>
+    <div class="playersDIV">
+      <div class="playerItem" *ngFor="let player of teams[myID]; let indexValue = index;">
+        <div (click)="sendToLeft(indexValue)" [ngClass]="iAmTheFirst?'turnItOff':'myCursor'" class="l-iconSendButton noselect mat-toolbar mat-primary">
+          <md-icon class="arrowPosition">keyboard_arrow_left</md-icon>
+        </div>
+        <div class="mat-toolbar mat-primary playersNameDIV">
+          <div class="playersNameDIVInside">{{player}}</div>
+        </div>
+        <div (click)="sendToRight(indexValue)" [ngClass]="iAmTheLast?'turnItOff':'myCursor'" class="r-iconSendButton noselect mat-toolbar mat-primary">
+          <md-icon class="arrowPosition">keyboard_arrow_right</md-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

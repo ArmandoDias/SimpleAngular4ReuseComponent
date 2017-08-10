@@ -1,0 +1,104 @@
+.teamDiv {
+  width: 198px;
+  height: 378px;
+  border: 1px solid #000;
+  position: relative;
+  display: inline-table;
+  margin-right: 10px;
+  padding: 0px;
+}
+
+.r-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.r-iconAdd {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.bodyDIV {
+  margin: 10px;
+}
+
+.addPlayerDIV {
+  position: relative;
+}
+
+.addPlayerDIVLimit {
+  margin-right: 50px;
+}
+
+.playersDIV {
+  border: 1px solid #000;
+  margin-top: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 215px;
+}
+
+.playerItem {
+  width: 100%;
+  vertical-align: top;
+  position: relative;
+  height: 39px;
+  background-color: #DDD;
+  border-bottom: 1px solid #000;
+}
+
+.l-iconSendButton {
+  width: 25px;
+  display: inline-table;
+  padding: 0px;
+  min-height: 10px;
+  height: 33px;
+  position: absolute;
+  vertical-align: middle;
+}
+
+.r-iconSendButton {
+  width: 25px;
+  display: inline-table;
+  padding: 0px;
+  min-height: 10px;
+  height: 33px;
+  position: absolute;
+  right: 0px;
+  vertical-align: middle;
+}
+
+.playersNameDIV {
+  display: inline-table;
+  font-size: 12px;
+  min-height: 20px;
+  height: 39px;
+  position: absolute;
+  left: 25px;
+  vertical-align: middle;
+  padding: 0px;
+  background-color: #FFF;
+  color: #000;
+}
+
+.playersNameDIVInside {
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 100px;
+}
+
+.arrowPosition {
+  margin-top: 6px;
+}
+
+.myCursor {
+  cursor: pointer;
+}
+
+.turnItOff {
+  background-color: #666;
+}

@@ -1,20 +1,49 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.com/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="appFrame">
+  <div class="htmlTitle">
+    Angular: Reuse Component - Armando Schiavon Dias -
+    <a href="mailto:armando.schiavon@gmail.com">armando.schiavon@gmail.com</a>
+  </div>
+  <div class="htmlExplanation">
+    <div class="htmlExplanationBar noselect" (click)="showHideExplanation()">
+      ( Click here for <strong>{{showHideWord}}</strong> the exercise explanation )
+    </div>
+    <div class="htmlExplanationList" [style.display]="showHideStatus">
+      This is just another example, to show how I code a simple <strong>"One Page App"</strong>
+      using <strong>Angular 4</strong>.<br/>
+      You probably found this code through my <strong>CV</strong> or <strong>
+      <a href="https://www.linkedin.com/in/armandoschiavondias/" target="_blank">
+      LinkedIn</a></strong>.<br/><br/>
+      <strong>Mission:</strong> This time, the idea is build a component, reuse it how many times the user need and make it able to exchange data between they.<br/>
+      Let's use <strong><a href="https://material.angular.io/" target="_blank">Material Angular</a></strong> to make it looks nice.<br/>
+      Click on icons to make it work!<br/>
+      This code was created as example purpose.
+      <br/><br/>
+      Some points that I keep in mind all the time:<br/>
+      <ul>
+        <li><strong>
+          <a href="https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf"
+          target="_blank">Object Calisthenics</a></strong> ( Always when possible... )</li>
+          <li>I am using <strong>TypeScript</strong> because I choose <strong><a target="_blank" 
+            href="https://angular.io/">Angular.io</a></strong> (4.x) and not <strong>
+            <a target="_blank" href="https://angularjs.org/">Angularjs.org</a></strong> (1.x).</li>
+          <li>I am using <strong>TESlint</strong> ( ESLint for TypeScript Files ):
+          This helps a lot with the code's pattern.</li>
 
+      </ul>
+        The files are:<br/>
+      <ul>
+        <li>src/app/app.module.ts (Some changes)</li>
+        <li>src/app/app.component.ts (Some code and explanations)</li>
+        <li>src/app/app.component.html (The HTML, the main 'Viewer' of this MVC)</li>
+        <li>src/app/app.component.css (Some Style)</li>
+        <li>src/app/control/control.component.css (More Style)</li>
+        <li>src/app/control/control.component.html (HTML of Component where you click to create as many 'teams' you need)</li>
+        <li>src/app/control/control.component.ts (TypeScript of Component 'replicator'. Very simple...)</li>
+        <li>src/app/control/team/team.component.css (More Style)</li>
+        <li>src/app/control/team/team.component.html (HTML of each 'team')</li>
+        <li>src/app/control/team/team.component.ts (TypeScript of each 'team'. Here I have Inputs and Outputs to comunication between they...)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<app-control></app-control>
