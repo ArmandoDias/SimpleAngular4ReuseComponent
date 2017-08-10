@@ -1,0 +1,20 @@
+<div class="holderDiv">
+  <md-toolbar color="primary">
+    <span>Team Organizer</span>
+    <div class="r-icon noselect" (click)="addTeam()"><md-icon>note_add</md-icon></div>
+  </md-toolbar>
+  <div class="content-area mat-elevation-z8">
+    <div [style.width.px]="teamWidth">
+      <app-team 
+        *ngFor="let team of teams; let indexValue = index; let first = first; let last = last;"
+        [myID]="indexValue"
+        [iAmTheFirst]="first"
+        [iAmTheLast]="last"
+        [teams]="teams"
+        (removeMe)="removeThisTeam($event)"
+        (sendThisToMyLeft)="sendToLeft($event)"
+        (sendThisToMyRight)="sendToRight($event)"
+      ></app-team>
+    </div>
+  </div>
+</div>

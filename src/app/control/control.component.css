@@ -1,0 +1,25 @@
+.holderDiv {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.r-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.content-area {
+  margin-top: 20px;
+  padding: 10px;
+  overflow-x: scroll;
+  height: 400px;
+  background-color: #EFEFEF;
+}

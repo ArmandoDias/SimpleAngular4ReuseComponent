@@ -1,28 +1,14 @@
-# ReuseComponent
+# Simple Angular 4 Reuse Component
+This is just a example, to show how I code a simple "One Page App" using `Angular 4`.
+You probably found this code through my `CV` or [LinkedIn](https://www.linkedin.com/in/armandoschiavondias/).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
+## Mission:
+This time, the idea is build a component, reuse it how many times the user need and make it able to exchange data between they.
+Let's use [Material Angular](https://material.angular.io/) to make it looks nice.
+Click on icons to make it work!
+This code was created as example purpose.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Some points that I keep in mind all the time:
+- [Object Calisthenics](https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf) ( Always when possible... )
+- I am using `TESlint` ( ESLint for TypeScript Files ): This helps a lot with the code's pattern.
+- I am using `TypeScript` because I choose `Angular.io` (4.x) and not `Angularjs.org` (1.x).
