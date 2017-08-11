@@ -12,3 +12,6 @@ Some points that I keep in mind all the time:
 - [Object Calisthenics](https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf) ( Always when possible... )
 - I am using `TESlint` ( ESLint for TypeScript Files ): This helps a lot with the code's pattern.
 - I am using `TypeScript` because I choose `Angular.io` (4.x) and not `Angularjs.org` (1.x).
+
+## To see this in action right now!
+Please access the link: [https://armandodias.github.io/SimpleAngular4ReuseComponent/](https://armandodias.github.io/SimpleAngular4ReuseComponent/)
